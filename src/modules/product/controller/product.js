@@ -60,7 +60,7 @@ export const getProductsByConditions = (req, res) => {
         }
     })
         .then(result => {
-            return res.json({ message: 'Success', Products: result })
+            return res.json({ message: 'Success', products: result })
         })
         .catch(error => res.json({ message: 'Failed', error }))
 }
@@ -74,7 +74,7 @@ export const getProductsOfUser = (req, res) => {
         }
     })
         .then(result => {
-            return res.json({ message: 'Success', Products: result })
+            return res.json({ message: 'Success', products: result })
         })
         .catch(error => res.json({ message: 'Failed', error }))
 }
